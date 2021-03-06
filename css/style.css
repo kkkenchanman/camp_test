@@ -1,0 +1,232 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Reggae One', cursive;
+}
+
+body h1 {
+  margin: 0;
+}
+
+body button {
+  border: none;
+}
+
+main {
+  max-width: 1280px;
+  height: 90vh;
+  margin: auto;
+  padding: 1vh 2vw 5vh 2vw;
+  background-color: #FFF4E0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 10vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c01111));
+  background: linear-gradient(#c01111);
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4rem;
+}
+
+.title {
+  margin: 0 auto;
+  padding: 0;
+  height: 8%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.question {
+  height: 48%;
+  padding-top: 1.0%;
+  padding-bottom: 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questionImg {
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+}
+
+.questionImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -2px 2px 4px gray;
+          box-shadow: -2px 2px 4px gray;
+}
+
+.choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btnChoice {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 8vh;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #F99292;
+  /*ボタン色*/
+  color: #FFF;
+  font-family: 'Reggae One', cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: solid 4px #FB7D79;
+  border-radius: 3px;
+}
+
+.btnChoice:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+.btnChoice:hover {
+  opacity: 0.7;
+}
+
+.btnChoice:focus {
+  outline: none;
+}
+
+#answers {
+  padding: 1% 0 2% 0;
+  height: 35%;
+  -webkit-box-shadow: -2px 2px 4px gray;
+          box-shadow: -2px 2px 4px gray;
+  border-radius: 1%;
+}
+
+.correctAnswers {
+  background-color: #ffe2df;
+}
+
+.incorrectAnswers {
+  background-color: #EFEFEF;
+}
+
+.answerTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.answerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45%;
+  padding-bottom: 2%;
+}
+
+.answerContentLeft {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answerContentLeft h1 {
+  font-size: 6.0rem;
+}
+
+.answerContentRight {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answerContentRight table {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  font-size: 2rem;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #f3f3f3;
+}
+
+.answerContentRight table td {
+  border: solid 1px black;
+}
+
+#nextQuestion {
+  display: block;
+  margin: 1% auto 0 auto;
+  width: 80%;
+  height: 18%;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #AAD6EC;
+  /*ボタン色*/
+  color: #FFF;
+  font-family: 'Reggae One', cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: solid 4px #B4CCE3;
+  border-radius: 3px;
+}
+
+#nextQuestion:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+#nextQuestion:hover {
+  opacity: 0.7;
+}
+
+#nextQuestion:focus {
+  outline: none;
+}

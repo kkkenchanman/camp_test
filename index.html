@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/displayQuestion.js"></script>
+</head>
+<body>
+  <header class='header'>
+    <h1>SLAM DUNK PLAYERS QUIZ</h1>
+  </header>
+  <main>
+    <h1 class="title">Q : WHO IS HIM?</h1>
+    <section class="question">
+      <div class="questionImg">
+        <img src="" alt="" id="questionImg">
+      </div>
+      <div class="choices">
+        <button class='btnChoice' id='choice1'></button>
+        <button class='btnChoice' id='choice2'></button>
+        <button class='btnChoice' id='choice3'></button>
+        <button class='btnChoice' id='choice4'></button>
+        <audio id='correctSound' src="./assets/mp3/correct.mp3"></audio>
+        <audio id='incorrectSound', src="./assets/mp3/incorrect.mp3"></audio>
+      </div>  
+    </section>
+    <section id="answers" class=''>
+      <h1 class="answerTitle">答え</h1>
+      <div class="answerContent">
+        <div class="answerContentLeft">
+          <h1 id="answer"></h1>
+        </div>
+        <div class="answerContentRight">
+          <table>
+            <tr>
+              <td>名前</td>
+              <td id='name'></td>
+            </tr>
+            <tr>
+              <td>高校</td>
+              <td id='highSchool'></td>
+            </tr>
+            <tr>
+              <td>ポジション</td>
+              <td id='position'></td>
+            </tr>
+        </table>
+        </div>
+
+      </div>
+      <button id='nextQuestion'>次の問題へ</button>
+    </section>
+  </main>
+
+
+</body>
+</html>
